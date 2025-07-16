@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif; [cite_start]/* [cite: 13] */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto; [cite_start]/* [cite: 12] */
+    overflow: hidden;
+    padding: 20px 0; [cite_start]/* [cite: 13] */
+}
+
+/* Header & Navigation Bar */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky; [cite_start]/* [cite: 15] */
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex; [cite_start]/* [cite: 12] */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; [cite_start]/* [cite: 12] */
+}
+
+nav ul li {
+    margin-left: 20px; [cite_start]/* [cite: 13] */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 2.5rem; [cite_start]/* [cite: 13] */
+}
+
+h3 {
+    color: #555;
+    font-size: 1.8rem; [cite_start]/* [cite: 13] */
+}
+
+/* Hero Section */
+.hero {
+    background: #e9e9e9;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Skills & Interests Section */
+.skills-interests .skills-content {
+    display: flex; [cite_start]/* [cite: 12] */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skills-interests .skills,
+.skills-interests .interests {
+    flex: 1;
+    min-width: 280px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-interests ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-interests ul li {
+    background: #eee;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid; [cite_start]/* [cite: 12] */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; [cite_start]/* [cite: 13] */
+}
+
+[cite_start].project-card { /* [cite: 17] */
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+[cite_start].contact-section form { /* [cite: 18] */
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+[cite_start].contact-section label { /* [cite: 20] */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+[cite_start].contact-section textarea { /* [cite: 19] */
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-section textarea {
+    resize: vertical;
+}
+
+.contact-section button {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background: #0056b3;
+}
+
+.contact-section p {
+    text-align: center;
+}
+
+.contact-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+[cite_start]footer { /* [cite: 21] */
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+[cite_start]footer .social-links a { /* [cite: 22] */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Design with Media Queries */
+[cite_start]@media screen and (max-width: 768px) { /* [cite: 16] */
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .skills-interests .skills-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-interests .skills,
+    .skills-interests .interests {
+        width: 90%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+[cite_start]@media screen and (max-width: 480px) { /* [cite: 16] */
+    .container {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-section form {
+        padding: 20px;
+    }
+}
